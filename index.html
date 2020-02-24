@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+      }
+
+      .wrapper {
+        text-align: center;
+      }
+
+      .row1,
+      .emptyrow,
+      .row2,
+      .empcol,
+      .row3,
+      .row4,
+      .row5,
+      .row6,
+      .Contact {
+        display: flex;
+      }
+
+      /*  .row2 {
+        display: flex;
+      }
+*/
+      img {
+        width: 75%;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: slategray;
+      }
+
+      .column1 {
+        /*flex: 30%; */
+        width: 20%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column2 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 80%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column3,
+      .column6,
+      .column11,
+      .column16,
+      .column17,
+      .column18 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 30%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column4 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 35%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column5 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 35%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column7,
+      .column8,
+      .column9,
+      .column10 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 16.5%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column12,
+      .column13,
+      .column14,
+      .column15 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 35%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column19,
+      .column22 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 35%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      .column20,
+      .column21 {
+        /*flex: 70%; */
+        max-width: 100%;
+        width: 15%;
+        padding: 10px;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+      }
+
+      @media (max-width: 768px) {
+        img {
+          width: 100%;
+        }
+        .column1 {
+          width: 0%;
+          padding: 0px;
+        }
+        .column2 {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <img src="https://unsplash.com/photos/1-kPytLsVkY" />
+
+    <div class="wrapper">
+      <!--<h1>Heading Title</h1> -->
+      <!--    <img src="http://placehold.jp/400x400.png" /> -->
+    </div>
+
+    <div class="row1">
+      <div class="column1" style="background-color: white; opacity: 0%;">
+        <!--  <img src="https://unsplash.com/photos/GARQnVRF8oM" /> -->
+      </div>
+
+      <div class="column2" style="background-color:#bbb;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+    </div>
+
+    <div class="emptyrow">
+      <div class="empcol"><p></p></div>
+    </div>
+
+    <div class="row2">
+      <div class="column3" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div
+        class="column4"
+        style="background-color:#bbb; border: 10px; border-color: white"
+      >
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+
+      <div class="column5" style="background-color:slategray;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+    </div>
+
+    <div class="emptyrow">
+      <div class="empcol"><p></p></div>
+    </div>
+
+    <!-- IMAGES OF WORK HERE -->
+    <div class="row3">
+      <div class="column6" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        ></h2>
+      </div>
+
+      <div class="column7" style="background-color:#bbb;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+
+      <div class="column8" style="background-color:slategray;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+
+      <div class="column9" style="background-color:slategray;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+
+      <div class="column10" style="background-color:slategray;">
+        <h2
+          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large"
+        >
+          Saaiha Shakaib
+        </h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Special Effects Makeup Artist
+        </p>
+      </div>
+    </div>
+
+    <div class="emptyrow">
+      <div class="empcol"><p></p></div>
+    </div>
+
+    <!-- SKILLS HERE -->
+    <div class="row4">
+      <div class="column11" style="color:#bbb;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Skills.
+        </h2>
+      </div>
+
+      <div class="column12" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column13" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column14" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column15" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+    </div>
+
+    <div class="emptyrow">
+      <div class="empcol"><p></p></div>
+    </div>
+
+    <div class="Contact">
+      <h2
+        style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding-left: 10%"
+      >
+        CONTACT
+      </h2>
+    </div>
+
+    <!-- CONTACT HERE -->
+    <div class="row5">
+      <div class="column16" style="color:#bbb;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Skills.
+        </h2>
+      </div>
+
+      <div class="column17" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column18" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+    </div>
+
+    <!-- SOCIAL HERE -->
+    <div class="row6">
+      <div class="column19" style="color:#bbb;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Skills.
+        </h2>
+      </div>
+
+      <div class="column20" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column21" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+
+      <div class="column22" style="color:slategray;">
+        <h2
+          style="color:slategray; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; padding: 15%"
+        >
+          My Work.
+        </h2>
+      </div>
+    </div>
+
+    <div
+      class="copyright"
+      style="background-color: slategray; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center"
+    >
+      <p>Saaiha Shakaib 2020 ©. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
